@@ -16,7 +16,7 @@ Usage: #example
 Title: "Coach Telis"
 Description: "An example Coach of a level-2 coach"
 * name.given = "Telis"
-* name.family = "Papadakis "
+* name.family = "Papadakis"
 * qualification[0].code = CoachQualificationCS#coach-level-2 "Coach Level 2"
 
 Instance: spot-harbor-steps
@@ -39,7 +39,7 @@ Title: "Saturday Training Session"
 Description: "A two-hour session with a coach"
 * status = #finished
 * subject = Reference(Athlete-Aggelos)
-* participant[0].individual = Reference(coach-Telis)
+* participant[0].individual = Reference(Coach-Telis)
 * location[0].location = Reference(spot-harbor-steps)
 * period.start = "2026-11-14T10:00:00+02:00"
 * period.end = "2026-11-14T12:00:00+02:00"
