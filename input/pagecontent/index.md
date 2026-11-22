@@ -1,7 +1,3 @@
-<div class="stu-note" markdown="1">
-This is a **hobby / learning project**. It is not an HL7 specification and is not intended for clinical or production use.
-</div>
-
 ### Scope
 
 The Parkour Implementation Guide describes how to record **parkour training** with HL7 FHIR R4:
