@@ -14,17 +14,32 @@ publisher:
   name: Stratos Kokolakis
   url: https://github.com/skokolakis
 
+parameters:
+  shownav: 'true'
+
 pages:
   index.md:
     title: Home
-  movements.md:
-    title: Parkour Movements
   data-model.md:
     title: Data Model
+  movements.md:
+    title: Parkour Movements
+  downloads.md:
+    title: Downloads
+
 menu:
   Home: index.html
-  Movements: movements.html
-  Data Model: data-model.html
-  Artifacts: artifacts.html
+  Guidance:
+    Data Model: data-model.html
+    Parkour Movements: movements.html
+  Artifacts:
+    Profiles: artifacts.html#structures-resource-profiles
+    Extensions: artifacts.html#structures-extension-definitions
+    Value Sets: artifacts.html#terminology-value-sets
+    Code Systems: artifacts.html#terminology-code-systems
+    Examples: artifacts.html#example-example-instances
+    All Artifacts: artifacts.html
+  Downloads: downloads.html
+
 instanceOptions:
   manualSliceOrdering: true

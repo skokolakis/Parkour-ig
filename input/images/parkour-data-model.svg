@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" width="640" height="430" font-family="Verdana, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <style>
+      .box { stroke-width: 1.5; rx: 6; }
+      .people { fill: #e8f1fb; stroke: #2a6ebb; }
+      .place { fill: #eaf6ec; stroke: #2e8b45; }
+      .event { fill: #fff4e0; stroke: #d08a10; }
+      .clinical { fill: #fdecec; stroke: #c0392b; }
+      .name { font-size: 12.5px; font-weight: bold; fill: #222; text-anchor: middle; }
+      .base { font-size: 11px; fill: #555; text-anchor: middle; }
+      .edge { stroke: #555; stroke-width: 1.4; fill: none; marker-end: url(#arrow); }
+      .lbl { font-size: 10.5px; fill: #333; font-family: Consolas, monospace; }
+    </style>
+  </defs>
+
+  <!-- Boxes -->
+  <rect class="box people" x="230" y="15" width="180" height="56"/>
+  <text class="name" x="320" y="40">Coach</text>
+  <text class="base" x="320" y="58">Practitioner</text>
+
+  <rect class="box people" x="15" y="160" width="180" height="56"/>
+  <text class="name" x="105" y="185">Athlete</text>
+  <text class="base" x="105" y="203">Patient</text>
+
+  <rect class="box event" x="230" y="160" width="180" height="56"/>
+  <text class="name" x="320" y="185">Training Session</text>
+  <text class="base" x="320" y="203">Encounter</text>
+
+  <rect class="box place" x="445" y="160" width="180" height="56"/>
+  <text class="name" x="535" y="185">Training Spot</text>
+  <text class="base" x="535" y="203">Location</text>
+
+  <rect class="box event" x="130" y="310" width="180" height="56"/>
+  <text class="name" x="220" y="335">Movement Performance</text>
+  <text class="base" x="220" y="353">Observation</text>
+
+  <rect class="box clinical" x="345" y="310" width="180" height="56"/>
+  <text class="name" x="435" y="335">Parkour Injury</text>
+  <text class="base" x="435" y="353">Condition</text>
+
+  <!-- Training Session references -->
+  <line class="edge" x1="230" y1="188" x2="197" y2="188"/>
+  <text class="lbl" x="200" y="150" text-anchor="middle">subject</text>
+  <line class="edge" x1="320" y1="160" x2="320" y2="73"/>
+  <text class="lbl" x="326" y="120">participant</text>
+  <line class="edge" x1="410" y1="188" x2="443" y2="188"/>
+  <text class="lbl" x="430" y="150" text-anchor="middle">location</text>
+
+  <!-- Movement Performance references -->
+  <line class="edge" x1="160" y1="310" x2="160" y2="218"/>
+  <text class="lbl" x="110" y="270">subject</text>
+  <line class="edge" x1="280" y1="310" x2="280" y2="218"/>
+  <text class="lbl" x="286" y="270">encounter</text>
+
+  <!-- Parkour Injury references -->
+  <line class="edge" x1="380" y1="310" x2="380" y2="218"/>
+  <text class="lbl" x="386" y="270">encounter</text>
+  <polyline class="edge" points="480,366 480,400 60,400 60,218"/>
+  <text class="lbl" x="66" y="392">subject</text>
+
+  <!-- Legend -->
+  <text x="445" y="45" font-size="10.5" fill="#555">Arrow = FHIR Reference,</text>
+  <text x="445" y="60" font-size="10.5" fill="#555">labelled with the element</text>
+</svg>
