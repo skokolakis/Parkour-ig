@@ -2,7 +2,7 @@ Profile: MovementPerformance
 Parent: Observation
 Id: movement-performance
 Title: "Movement Performance"
-Description: "How well a traceur performed a movement during a session."
+Description: "How well an Athlete performed a movement during a session."
 * insert Metadata
 * obeys mp-1
 * status MS

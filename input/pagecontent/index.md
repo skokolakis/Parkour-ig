@@ -2,7 +2,7 @@
 
 The Parkour Implementation Guide describes how to record **parkour training** with HL7 FHIR R4:
 
-* who trains (the **athlete**, called a *traceur*) and who coaches them,
+* who trains (the **athlete**, called an *athlete*) and who coaches them,
 * **where** they train (the **training spot** and its surfaces),
 * **when** they train (the **training session**),
 * **how well** a movement went (distance, height, attempts and successes),
@@ -19,7 +19,7 @@ It reuses existing FHIR resources wherever possible and adds a small, purpose-bu
 
 | Concept | Profile | Based on | Key points |
 |---|---|---|---|
-| Traceur | [Athlete](StructureDefinition-Athlete.html) | Patient | Name and birth date required; start date and dominant take-off leg as extensions |
+| Athlete | [Athlete](StructureDefinition-Athlete.html) | Patient | Name and birth date required; start date and dominant take-off leg as extensions |
 | Coach | [Coach](StructureDefinition-Coach.html) | Practitioner | At least one coaching qualification |
 | Training place | [Training Spot](StructureDefinition-training-spot.html) | Location | Name, coordinates and surface types |
 | Training session | [Training Session](StructureDefinition-training-session.html) | Encounter | Class `FLD` (field); athlete, coach, spot and period |
@@ -38,7 +38,7 @@ It reuses existing FHIR resources wherever possible and adds a small, purpose-bu
 
 The examples follow one Saturday morning at the harbour:
 
-1. [Aggelos](Patient-Athlete-Aggelos.html), a traceur, trains with [Coach Telis](Practitioner-Coach-Telis.html) at [Harbor Steps](Location-spot-harbor-steps.html).
+1. [Aggelos](Patient-Athlete-Aggelos.html), an athlete, trains with [Coach Telis](Practitioner-Coach-Telis.html) at [Harbor Steps](Location-spot-harbor-steps.html).
 2. The [Saturday Training Session](Encounter-session-2026-11-14.html) records the two hours they spent there.
 3. Aggelos lands [7 out of 10 precision jumps of 2.5 m](Observation-precision-jump-aggelos.html).
 4. Later in the session, an [ankle sprain](Condition-ankle-sprain-aggelos.html) caused by a precision jump is recorded.

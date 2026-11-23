@@ -7,8 +7,8 @@
 
 A **Training Session** (Encounter) links an **Athlete** to a **Training Spot**
 and, optionally, a **Coach**. Each **Movement Performance** (Observation)
-points to the traceur and to the session. A **Parkour Injury** (Condition)
-points to the traceur, the session and the movement that caused it.
+points to the athlete and to the session. A **Parkour Injury** (Condition)
+points to the athlete, the session and the movement that caused it.
 
 ### Choosing the FHIR resources
 
@@ -16,7 +16,7 @@ The golden rule is *reuse before you invent*: every concept maps onto an existin
 
 | Parkour concept | Profile | Base resource | Why this resource |
 |---|---|---|---|
-| Traceur | [Athlete](StructureDefinition-Athlete.html) | Patient | FHIR has no "athlete" resource; Patient is the person the data is about, also in wellness and fitness |
+| Athlete | [Athlete](StructureDefinition-Athlete.html) | Patient | FHIR has no "athlete" resource; Patient is the person the data is about, also in wellness and fitness |
 | Coach | [Coach](StructureDefinition-Coach.html) | Practitioner | A person providing a service, with qualifications |
 | Training spot | [Training Spot](StructureDefinition-training-spot.html) | Location | A physical place with coordinates |
 | Training session | [Training Session](StructureDefinition-training-session.html) | Encounter | An interaction at a place and time; class `FLD` (field) |
